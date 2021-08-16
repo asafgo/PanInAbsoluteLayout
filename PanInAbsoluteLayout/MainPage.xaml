@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:PanInAbsoluteLayout"
+             x:Class="PanInAbsoluteLayout.MainPage">
+
+    <Grid BackgroundColor="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.RowSpacing>5</Grid.RowSpacing>
+
+        <AbsoluteLayout Grid.Row="1">
+            <local:PanControl />
+            <local:PanControl />
+            <local:PanControl />
+        </AbsoluteLayout>
+
+        <StackLayout  x:Name="slAreas"  Grid.Row="0" Orientation="Horizontal" Margin="0,5,0,5" BackgroundColor="White">
+            <Button Text="12345" WidthRequest="200"></Button>
+            <Button Text="12345" WidthRequest="200"></Button>
+            <Button Text="12345" WidthRequest="200"></Button>
+            <Button Text="12345" WidthRequest="200"></Button>
+            <Button Text="12345" WidthRequest="200"></Button>
+            <Button Text="12345" WidthRequest="200"></Button>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
